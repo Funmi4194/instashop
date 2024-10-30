@@ -13,9 +13,11 @@ This project is a RESTful API for an e-commerce application, built using Golang.
 First, clone the repo and install the dependencies:
 
 ```bash
-git clone
+git clone https://github.com/Funmi4194/instashop.git
 cd instashop
 go mod tidy
+create .env file
+go run main.go
 ```
 
 # Render Workflow
