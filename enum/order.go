@@ -1,13 +1,19 @@
 package enum
 
-type Currency string
+type OrderStatus string
 
-func (c Currency) String() string {
-	return string(c)
+func (o OrderStatus) String() string {
+	return string(o)
 }
 
 // Currency describes the currency of a transaction
 const (
-	// NGN
-	NGN Currency = "NGN"
+	// pending
+	Pending OrderStatus = "PENDING"
+
+	// canceled
+	Canceled OrderStatus = "CANCELED"
+
+	// completed
+	Completed OrderStatus = "COMPLETED"
 )
